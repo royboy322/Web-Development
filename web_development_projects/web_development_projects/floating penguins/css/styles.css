@@ -1,0 +1,223 @@
+/* Existing styles */
+body {
+    font-family: GeometriaThin, calibri, arial, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 25px 0;
+    border-bottom: 2px solid black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .left, header .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+footer {
+    width: 90%;
+    height: 50px;
+    padding: 25px 5%;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.big {
+    font-size: 36px; /* Reduced font size */
+    text-transform: lowercase;
+    font-family: GeometriaHeavy;
+}
+
+.small {
+    font-size: 18px; /* Adjusted font size */
+    text-transform: lowercase;
+    letter-spacing: 5px;
+    font-family: GeometriaLight;
+}
+
+#scrollBtn {
+    height: 100px;
+    width: 100px;
+    font-weight: 900;
+    line-height: 100px;
+    text-align: center;
+    font-size: 32px;
+    border: 2px solid black;
+    background: red;
+    color: white;
+    border-radius: 51px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 100;
+}
+
+#container {
+    background: #ecf0f1;
+    width: 100%;
+    height: 1500px;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.col {
+    margin: 10px 1%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 32px;
+    float: left;
+    border: 2px solid #2c3e50;
+}
+
+.col-third {
+    width: 30.55%;
+}
+
+.col-quarter {
+    width: 22%;
+}
+
+.col-full {
+    width: 98%;
+}
+
+.positioning {
+    float: left;
+    width: 100%;
+}
+
+.floating {
+    background: white;
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 5px 5px #7f8c8d;
+}
+
+.main {
+    background: #2c3e50;
+    color: #f1c40f;
+    font-size: 50px;
+    letter-spacing: 35px;
+    line-height: 150px;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    font-family: GeometriaHeavy;
+}
+
+.overlay {
+    height: 100%;
+    width: 100px;
+    background: rgba(52, 152, 219, 0.75);
+    color: white;
+    font-size: 24px;
+    letter-spacing: 10px;
+    line-height: 75px;
+    position: absolute;
+    right: 150px;
+    z-index: 10;
+    top: 0px;
+}
+
+@font-face {
+    font-family: GeometriaBold;
+    src: url(../fonts/Geometria-Bold.ttf);
+}
+
+@font-face {
+    font-family: GeometriaLight;
+    src: url(../fonts/Geometria-Light.ttf);
+}
+
+@font-face {
+    font-family: GeometriaHeavy;
+    src: url(../fonts/Geometria-Heavy.ttf);
+}
+
+@font-face {
+    font-family: GeometriaThin;
+    src: url(../fonts/Geometria-Thin.ttf);
+}
+
+@font-face {
+    font-family: GeometriaMedium;
+    src: url(../fonts/Geometria-Medium.ttf);
+}
+
+/* New game styles */
+#game-container {
+    background: #2ecc71;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hideout {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.hideout label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hideout img {
+    width: 100%;
+    height: 100%;
+}
+
+.hideout .mound {
+    display: block;
+}
+
+.hideout .question {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.hideout .hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.hideout:hover .mound {
+    display: none;
+}
+
+.hideout:hover .question {
+    display: block;
+}
+
+.hideout:hover .hidden {
+    display: block;
+}
