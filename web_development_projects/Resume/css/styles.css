@@ -1,0 +1,227 @@
+/* Universal / Reset Selector - Clears all specified values */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Calibri', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centering the main container horizontally */
+}
+
+/* Main Container */
+#container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Minimum height of the container to cover the viewport */
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+header .left, header .right {
+    width: 48%;
+}
+
+header .big {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .small {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Section Headings */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 15px;
+}
+
+li {
+    line-height: 1.6;
+}
+
+/* Resume Sections */
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Basic styling for content within sections */
+.resume-section p, .resume-section ul, .resume-section ol {
+    margin-left: 20px;
+}
+
+/* Highlighted Content */
+.highlight {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+/* ID Selected - id attribute */
+/* Example: Name */
+#name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Example: Contact Information */
+#contact-info {
+    margin-bottom: 20px;
+}
+
+/* Class Selector - class attribute */
+/* Example: Experience */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    margin-bottom: 5px;
+}
+
+/* Example: Education */
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+}
+
+/* Example: Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.skill-item {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Example: Languages */
+.languages-list {
+    margin-bottom: 20px;
+}
+
+.language-item {
+    margin-right: 10px;
+}
+
+/* Example: Interests */
+.interests-list {
+    margin-bottom: 20px;
+}
+
+.interest-item {
+    margin-right: 10px;
+}
+
+/* Example: References */
+.references-list {
+    margin-bottom: 20px;
+}
+
+.reference-item {
+    margin-bottom: 10px;
+}
+
+.reference-item p {
+    margin-bottom: 5px;
+}
+
+/* Pseudo Classes element:state */
+/* Make rule for id (hoverDiv) when you hover */
+#hoverDiv:hover {
+    letter-spacing: 1px;
+    background: #28a745;
+    color: white;
+}
+
+/* Make rule for id (clickDiv) when you click (active) */
+#clickDiv:active {
+    letter-spacing: 1px;
+    background: #dc3545;
+    color: white;
+}

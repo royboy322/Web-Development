@@ -1,0 +1,24 @@
+@font-face{
+	font-family: GeometriaBold;
+	src: url(../fonts/Geometria-Bold.ttf);
+}
+
+@font-face{
+	font-family: GeometriaLight;
+	src: url(../fonts/Geometria-Light.ttf);
+}
+
+@font-face{
+	font-family: GeometriaHeavy;
+	src: url(../fonts/Geometria-Heavy.ttf);
+}
+
+@font-face{
+	font-family: GeometriaThin;
+	src: url(../fonts/Geometria-Thin.ttf);
+}
+
+@font-face{
+	font-family: GeometriaMedium;
+	src: url(../fonts/Geometria-Medium.ttf);
+}
