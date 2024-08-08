@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+@media (max-width: 768px) {
+    #banner {
+        position: fixed;  
+        width: 99% !important; 
+        height: auto; 
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #000; 
+        box-sizing: border-box;
+    }
+    #banner div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner img {
+        margin-right: 30px;
+        margin-left: 30px;
+        display: block;
+    }
+
+    #banner p {
+        text-align: center;
+    }
+
+    #banner hr {
+        margin: 5px auto;
+        text-align: center;
+    }
+     #navbar img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    h1 {
+        font-size: 23px; 
+    }
+     header {
+        margin-top: 150px; 
+    }
+    
+}
+</style>
+</head>
+<body>
+    <div id="banner" style="background-color:black; width:96%; border:5px solid ghostwhite; padding: 20px;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <img src="pictures/linked%20in%20PP_0715%5B2256%5D.PNG" alt="picture of me" style="height:116px; width:58px; margin-right: 20px;"/>
+        <div style="text-align: left;">
+            <p style="font-size:39px; color:white; letter-spacing:5px; margin-top: -5px; text-indent:9px; font-family: 'playfair display'; margin: 0;">
+                Michael Roy
+            </p>
+            <hr style="margin: 5px 0; width:100%; color:white;" />
+            <p style="font-style:italic; color:gray; margin: 0;">Software Engineer</p>
+        </div>
+    </div>
+</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <header>
+    <h1 style="color: white;">Welcome to My Personal Homepage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="#contact.html" class="nav-link active-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table id="navbar" style="margin-left:auto; margin-right:auto; text-align:center;">
+         <tr>
+             <td>
+                    <a href="projects.html" style="border:0px; margin:5px; display:inline-block;">
+					<img src="pictures/whitebackwardarrow.png" style="width:70px; height:70px;" alt="home icon that takes you to the intro page"/></a>
+					
+                    <a href="index.html" style="border:0px; margin:5px; display:inline-block;">
+					<img src="pictures/whitehome.png" style="width:70px; height:70px;" alt="home icon that takes you to the intro page"/></a>
+				
+					<a href="projects.html" style="border:0px; margin:5px; display:inline-block;">
+					<img src="pictures/whitesitemap.png" style="width:70px; height:70px;" alt="white map icon that takes users to the sitemap page"/></a>
+                    
+                    <a href="contact.html" style="border:0px; margin:5px; display:inline-block;">
+					<img src="pictures/icons8-contact-90.png" style="width:70px; height:70px;" alt="white map icon that takes users to the sitemap page"/></a>
+                 
+                    <a href="contact.html" style="border:0px; margin:5px; display:inline-block;">
+					<img src="pictures/whiteforwardarrow.png" style="width:70px; height:70px;" alt="home icon that takes you to the intro page"/></a>
+				
+             </td>
+        </tr>
+        </table>
+        <br/>
+        <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Michael Roy<br/>
+        Email: <a href="mailto:mdroy@neiu.edu" style="color:#007BFF;">mdroy@neiu.edu</a><br/>
+        You can contact me by clicking the email above, or you can fill out this form and i'll get back to you!
+    </p>
+    <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br/><br/>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br/><br/>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br/><br/>
+        
+        <button type="submit">Send</button>
+    </form>
+</section>
+    <section id="contact">
+        <h2>Find me on:</h2>
+        <p>
+            <a href="www.linkedin.com/in/michael-roy-715005208" style="color:#007BFF;">Linkedin</a>
+            <br/>
+            <a href="https://github.com/royboy322" style="color:#007BFF;">GitHub</a>
+        </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Michael Roy</p>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("bLc6Zfbvc34lifFQ2"); // Replace with your actual EmailJS user ID
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            emailjs.sendForm('service_fq1qrgn', 'template_jsvc7pd', this)
+                .then(function(response) {
+                    alert('Message sent successfully.');
+                }, function(error) {
+                    alert('Failed to send message.');
+                });
+        });
+    </script>
+   <script src="type.js"></script>
+</body>
+</html>
