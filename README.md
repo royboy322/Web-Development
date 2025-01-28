@@ -5,7 +5,8 @@ https://michaelroycodes.dev/artist <br>
 This project is a web-based recreation of Mondrian-inspired artwork using HTML and CSS. It organizes colored blocks into a minimalist grid layout, showcasing the principles of modern art and responsive web design for a course in client-side web development.
 
 Favorite Recipe
-https://michaelroycodes.dev/favoriterecipe
+https://michaelroycodes.dev/favoriterecipe <br>
+This project is a simple recipe webpage for a Meat Lovers Pizza, created using HTML and CSS. It includes a structured layout with sections for ingredients, directions, and a finished product image, styled with a clean and responsive design.
 
 Floating Penguins
 https://michaelroycodes.dev/penguins
