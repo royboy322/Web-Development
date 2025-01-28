@@ -21,3 +21,4 @@ https://michaelroycodes.dev/pearson <br>
 
 **Replica of NEIU D2L:**
 https://michaelroycodes.dev/login <br>
+This project is a mock homepage for Northeastern Illinois University D2L, built using HTML, CSS, and JavaScript. It includes a functional login page, responsive navigation bar, a sidebar with tools like a calendar, course list, Google Workspace, and a main content area displaying announcements and course details. Interactive features include a calendar dropdown and tabs for organizing courses. The page design is styled with clean and modern aesthetics, focusing on usability for students and faculty.
