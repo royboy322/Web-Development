@@ -14,6 +14,7 @@ This project is an interactive browser-based game called "Find the Penguins", de
 
 **Job Application:**
 https://michaelroycodes.dev/application <br>
+This code creates a clean and responsive Job Application Form with fields for user details, a file upload option, and a text area for the cover letter. The CSS styles enhance usability with a centered container, rounded corners, and hover effects on the submit button.
 
 **Replica of Pearson "MyProgrammingLab":**
 https://michaelroycodes.dev/pearson <br>
